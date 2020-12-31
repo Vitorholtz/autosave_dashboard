@@ -15,7 +15,7 @@
     <header>
 
         <div class="burger-logo"> 
-        <i class="fas fa-bars"></i>
+        <i onclick="Opensidebar() "class="fas fa-bars"></i>
         <img src="img/logo-horizontal.svg" alt="" class="logo">
         </div>
 
@@ -32,7 +32,7 @@
 
     </header>
 
-<section id="side-bar"> 
+<section onmouseover="sidebarHover()" onmouseout="sidebarHoverOut()" class="side-bar"> 
     <ul id="bar"></ul>
     <li id="bar-item"><i class="fas fa-home sidebar-icons"></i> Main</li>
     <li id="bar-item"><i class="fas fa-chart-bar sidebar-icons"></i>Gráficos</li>
@@ -42,7 +42,16 @@
     <li id="bar-item"><i class="fas fa-cog sidebar-icons"></i>Configurações</li>
 </section>
 
-<section class="dashboard"></section>
-    
+<main class="main">
+
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+
+</main>
+
+<script src="dashboard.js"></script>
 </body>
 </html>
