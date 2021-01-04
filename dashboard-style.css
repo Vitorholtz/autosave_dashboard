@@ -10,6 +10,7 @@
 
 body {
   overflow: hidden;
+
 }
 
 
@@ -25,7 +26,6 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 6px 2px 0px rgba(0,0,0,0.38);
-
  
 }
 
@@ -47,7 +47,6 @@ header {
 
 }
 
-
 .navbar-search input {
 
     width: 100%;
@@ -62,7 +61,6 @@ header {
 
     outline: none;
 }
-
 
 .fa-search {
    
@@ -81,7 +79,6 @@ header {
     display: flex;
     justify-content: space-between;
 
-
 }
 
 .fa-bars, .fa-bell, .fa-moon, .fa-user-circle {
@@ -97,7 +94,6 @@ header {
 .fas:hover, .fas:active {
 
     color: #41B6A8 ;
-
 
 }
 
@@ -116,8 +112,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     color: rgb(104, 104, 104);
-    visibility: hidden;
-    
+    visibility: hidden;  
     
 }
 
@@ -154,9 +149,7 @@ header {
     align-items: center;
     font-weight: bold;
     padding: 1em 0;
-
 }
-
 
 .not-icon {
 
@@ -170,7 +163,6 @@ header {
     overflow-x: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
 
 }
 
@@ -198,14 +190,11 @@ header {
     
 }
 
-
 .not-and-date span:last-child{
 
     font-size: .9em;
     font-weight: bold;
 }
-
-
 
 /* sidebar */
 
@@ -279,33 +268,40 @@ background-color:  #27353F;
 
 /* Dashboard -  main content */
 
+
 .main {
 
     background-color:#27353F;
     height: 100vh;
-    padding: 10px 30px;
+    width: 100vw;
     margin-left: 69px;
-    display: flex;
-    flex-direction: column;
     transition: margin-left .3s ease-in-out;
+    display: grid;
+    grid-template-areas:
+    'um dois tres quatro '
+    'cinco seis sete quatro'
+    'oito oito oito oito';
+    grid-gap: 10px;
+    padding: 10px;
 }
+
+.main > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
 
 .main-expand {
     margin-left: 260px;
 }
 
-.box1 {
-
-    width: 100%;
-    display: flex;
-    margin: 5px;
-    background-color: #091f1c;
-}
-
-.box2 {
-    height: 210px;
-    width: 25%;
-    margin: 7px;
-    background-color: #c6caca;
-}
+.item1 { grid-area: um; }
+.item2 { grid-area: dois; }
+.item3 { grid-area: tres; }
+.item4 { grid-area: quatro; }
+.item5 { grid-area: cinco; }
+.item6 { grid-area: seis; }
+.item7 { grid-area: sete; }
+.item8 { grid-area: oito; }
 
